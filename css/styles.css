@@ -14,6 +14,8 @@ button {
 ul,
 ol {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .section-title {
@@ -24,6 +26,15 @@ ol {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+}
+
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: auto;
+}
+.header-container {
+  display: flex;
 }
 
 .logo {
