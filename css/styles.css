@@ -147,15 +147,42 @@ p {
   background-color: #404bbf;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .footer-page {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 
 .footer-page-text {
+  max-width: 264px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
 }
 
 .logo-part-footer {
@@ -164,10 +191,26 @@ p {
 
 .our-team {
   background-color: #f4f4fd;
+  padding: 120px 0;
+}
+
+.team-title {
+  margin-bottom: 72px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.our-team-list {
+  display: flex;
+  gap: 24px;
+  padding-right: 156px;
+  padding-left: 156px;
 }
 
 .our-team-list-item {
   background-color: #ffffff;
+  flex-wrap: wrap;
+  border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 72px) / 4);
 }
 
 .our-team-fullname {
