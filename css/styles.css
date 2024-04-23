@@ -14,8 +14,9 @@ button {
 ul,
 ol {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 h1,
@@ -25,7 +26,14 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .section-title {
@@ -41,7 +49,10 @@ p {
 .container {
   max-width: 1158px;
   padding: 0 15px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .page-header {
@@ -118,6 +129,7 @@ p {
 }
 
 .main-title {
+  max-width: 496px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -125,12 +137,26 @@ p {
   text-align: center;
   color: #ffffff;
   text-transform: capitalize;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 57px;
 }
 .hero {
   background-color: #2e2f42;
+  max-width: 1440px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 57px;
+  padding: 188px 0 188px;
 }
 
 .order-service-btn {
+  display: block;
+  border: none;
+  min-width: 169px;
+  padding: 16px 32px;
+  height: 56px;
   font-family: inherit;
   background-color: #4d5ae5;
   color: #ffffff;
@@ -234,6 +260,19 @@ p {
   color: #434455;
 }
 
+.benefits {
+  padding: 120px 0 120px;
+}
+
+.benefits-list {
+  display: flex;
+  gap: 24px;
+}
+
+.benefits-list-item {
+  width: calc((100%-72px) / 4);
+}
+
 .benefits-list-title {
   font-weight: 500;
   font-size: 20px;
@@ -242,6 +281,7 @@ p {
   color: #2e2f42;
   text-align: left;
   background-color: #ffffff;
+  margin-bottom: 8px;
 }
 .benfits-list-text {
   font-size: 16px;
@@ -251,8 +291,31 @@ p {
   text-align: left;
 }
 
+.our-portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.portfolio-title {
+  margin-bottom: 72px;
+}
+.our-portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
 .our-portfolio-list-item {
   background-color: #ffffff;
+  width: calc((100%-48px) / 3);
+}
+
+.container-potfolio-cards {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
 }
 
 .our-portfolio-name {
