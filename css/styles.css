@@ -228,8 +228,6 @@ img {
 .our-team-list {
   display: flex;
   gap: 24px;
-  padding-right: 156px;
-  padding-left: 156px;
 }
 
 .our-team-list-item {
